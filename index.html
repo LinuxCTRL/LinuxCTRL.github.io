@@ -11,6 +11,7 @@
             --text-main: #f8fafc;
             --text-sub: #94a3b8;
             --accent: #38bdf8;
+            --accent-screw: #ff007f;
             --accent-block: #00f0ff;
             --accent-lady: #f43f5e;
             --border: #334155;
@@ -79,6 +80,10 @@
             font-size: 0.85rem;
             transition: opacity 0.2s;
         }
+        .link-btn.screw {
+            background-color: var(--accent-screw);
+            color: #ffffff;
+        }
         .link-btn.block {
             background-color: var(--accent-block);
             color: #0f172a;
@@ -100,7 +105,15 @@
 <body>
     <div class="container">
         <h1>LinuxCTRL Games & Apps</h1>
-        <p.subtitle">Mobile Applications & Games Hub</p>
+        <p class="subtitle">Mobile Applications & Games Hub</p>
+
+        <div class="app-card">
+            <div class="app-info">
+                <h3>Nut & Bolt — Unbolt Jam</h3>
+                <p>Mechanical Screw Sorting & Plate Physics</p>
+            </div>
+            <a href="./privacy/screw-sort-jam.html" class="link-btn screw">Privacy Policy</a>
+        </div>
 
         <div class="app-card">
             <div class="app-info">
