@@ -11,6 +11,7 @@
             --text-main: #f8fafc;
             --text-sub: #94a3b8;
             --accent: #38bdf8;
+            --accent-block: #00f0ff;
             --accent-lady: #f43f5e;
             --border: #334155;
         }
@@ -78,6 +79,10 @@
             font-size: 0.85rem;
             transition: opacity 0.2s;
         }
+        .link-btn.block {
+            background-color: var(--accent-block);
+            color: #0f172a;
+        }
         .link-btn.lady {
             background-color: var(--accent-lady);
             color: #ffffff;
@@ -95,7 +100,15 @@
 <body>
     <div class="container">
         <h1>LinuxCTRL Games & Apps</h1>
-        <p class="subtitle">Mobile Applications & Games Hub</p>
+        <p.subtitle">Mobile Applications & Games Hub</p>
+
+        <div class="app-card">
+            <div class="app-info">
+                <h3>Block Blast! Grid Puzzle</h3>
+                <p>Addictive Tetris Block Combo Game</p>
+            </div>
+            <a href="./privacy/block-blast.html" class="link-btn block">Privacy Policy</a>
+        </div>
 
         <div class="app-card">
             <div class="app-info">
