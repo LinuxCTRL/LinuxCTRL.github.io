@@ -19,6 +19,7 @@
             --accent-lady: #f43f5e;
             --accent-farm: #22c55e;
             --accent-word: #06b6d4;
+            --accent-sort: #00b4d8;
             --border: #334155;
         }
         body {
@@ -117,6 +118,10 @@
             background-color: var(--accent-word);
             color: #0f172a;
         }
+        .link-btn.sort {
+            background-color: var(--accent-sort);
+            color: #0f172a;
+        }
         .link-btn:hover {
             opacity: 0.9;
         }
@@ -130,7 +135,21 @@
 <body>
     <div class="container">
         <h1>LinuxCTRL Games & Apps</h1>
-        <p class="subtitle">Mobile Applications & Games Hub</p>
+        <div class="app-card">
+            <div class="app-info">
+                <h3>FocusFlow — Aesthetic Pomodoro &amp; Habits</h3>
+                <p>Pomodoro Focus Timer, Habit Tracker &amp; Lofi Soundscapes</p>
+            </div>
+            <a href="./privacy/focus-flow.html" class="link-btn word">Privacy Policy</a>
+        </div>
+
+        <div class="app-card">
+            <div class="app-info">
+                <h3>Sort &amp; Fill 3D — ASMR Organizer</h3>
+                <p>Spatial Packing &amp; Fridge Organizer Game</p>
+            </div>
+            <a href="./privacy/sort-fill-3d.html" class="link-btn sort">Privacy Policy</a>
+        </div>
 
         <div class="app-card">
             <div class="app-info">
