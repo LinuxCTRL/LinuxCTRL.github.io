@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - PingMatrix</title>
+    <style>
+        :root {
+            --bg-color: #08090E;
+            --card-bg: #0E111A;
+            --text-color: #E2E8F0;
+            --text-muted: #94A3B8;
+            --accent-color: #FF9900;
+            --border-color: #1E2638;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+        h1, h2, h3 {
+            color: #FFFFFF;
+        }
+        h1 {
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 15px;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        h2 {
+            margin-top: 30px;
+            color: var(--accent-color);
+        }
+        p, li {
+            color: var(--text-muted);
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .highlight {
+            background: rgba(255, 153, 0, 0.1);
+            border-left: 4px solid var(--accent-color);
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .footer {
+            margin-top: 40px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
+            font-size: 0.9em;
+            color: var(--text-muted);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏎️ PingMatrix Privacy Policy</h1>
+        <p><strong>Effective Date:</strong> August 15, 2026</p>
+
+        <div class="highlight">
+            <p><strong>Zero Personal Data Collection:</strong> PingMatrix is a standalone, on-device gaming network diagnostic utility. It does not require user registration, does not collect personal identifiers, and only measures TCP/DNS round-trip times directly from your device to public gaming nodes.</p>
+        </div>
+
+        <h2>1. Floating Overlay Permission (SYSTEM_ALERT_WINDOW)</h2>
+        <p>PingMatrix requests the <code>SYSTEM_ALERT_WINDOW</code> permission strictly to render the floating in-game HUD overlay on top of mobile games when requested by the user. The floating overlay does not capture screen contents, record keystrokes, or intercept gameplay.</p>
+
+        <h2>2. Network & Latency Probes</h2>
+        <p>PingMatrix performs short TCP connection probes to public gaming datacenters (Riot, PUBG, Fortnite, Valve, AWS, Cloudflare) solely to calculate ping (ms), jitter variance, and packet loss percentages.</p>
+
+        <h2>3. Advertisements (Google AdMob)</h2>
+        <p>PingMatrix uses Google AdMob to deliver rewarded video ads for unlocking extended floating HUD sessions. AdMob may collect standard non-identifying device metrics in compliance with Google's Privacy Policy.</p>
+
+        <h2>4. Contact Us</h2>
+        <p>If you have any questions regarding PingMatrix, contact us at:</p>
+        <p><strong>Email:</strong> support@foor.com<br><strong>Developer:</strong> foor</p>
+
+        <div class="footer">
+            &copy; 2026 PingMatrix (foor). All rights reserved.
+        </div>
+    </div>
+</body>
+</html>
