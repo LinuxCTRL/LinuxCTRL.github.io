@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - FOOR VPN</title>
+    <style>
+        :root {
+            --bg: #0a0e17;
+            --card-bg: #131b2e;
+            --text-main: #f8fafc;
+            --text-sub: #8a99ad;
+            --accent: #00f0ff;
+            --accent-green: #00ff88;
+            --border: #263554;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            margin: 0;
+            padding: 24px 16px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            padding: 36px;
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        }
+        .shield-icon {
+            font-size: 3rem;
+            margin-bottom: 8px;
+            display: inline-block;
+        }
+        h1 {
+            color: var(--accent);
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+        h2 {
+            color: var(--accent-green);
+            font-size: 1.3rem;
+            margin-top: 28px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px;
+        }
+        p, li {
+            color: var(--text-sub);
+            font-size: 1rem;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .date {
+            color: var(--text-sub);
+            font-size: 0.9rem;
+            margin-bottom: 24px;
+        }
+        .highlight-box {
+            background-color: rgba(0, 240, 255, 0.05);
+            border-left: 4px solid var(--accent);
+            padding: 16px;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="shield-icon">🛡️</div>
+        <h1>Privacy Policy for FOOR VPN</h1>
+        <div class="date">Last updated: August 15, 2026</div>
+
+        <div class="highlight-box">
+            <strong>Strict No-Logs Promise:</strong> FOOR VPN does not collect, monitor, store, or log any browsing activity, DNS queries, visited URLs, traffic destinations, or payload contents.
+        </div>
+
+        <h2>1. Overview</h2>
+        <p><strong>FOOR VPN</strong> ("we", "our", or "the app") is committed to protecting your privacy and security. This Privacy Policy outlines how your information is handled when using our Android mobile application.</p>
+
+        <h2>2. Android VpnService & Network Routing</h2>
+        <p>FOOR VPN utilizes Android's native <code>VpnService</code> API to establish a secure, encrypted virtual network interface (TUN) on your device. The primary function is to:</p>
+        <ul>
+            <li>Encrypt network packets between your device and selected proxy server endpoints (VLESS, VMess, Trojan, SSH, SlowDNS).</li>
+            <li>Protect your traffic on public or untrusted Wi-Fi hotspots.</li>
+            <li>Route network traffic strictly according to your selected carrier tweaks and server settings.</li>
+        </ul>
+        <p><strong>We do NOT store or log any data transmitted through the tunnel.</strong></p>
+
+        <h2>3. Data We Do NOT Collect</h2>
+        <ul>
+            <li><strong>No Browsing History:</strong> We do not log websites you visit or apps you use.</li>
+            <li><strong>No Traffic Data or IP Logs:</strong> We do not record original IP addresses, connection timestamps, or session bandwidth logs.</li>
+            <li><strong>No Personal Identifiers:</strong> We do not require registration, email addresses, names, or phone numbers to use the app.</li>
+        </ul>
+
+        <h2>4. Data Stored Locally on Your Device</h2>
+        <p>The app stores minimal operational preferences locally on your device:</p>
+        <ul>
+            <li>Selected server and carrier tweak configuration.</li>
+            <li>Remaining connection session time (used for the countdown timer).</li>
+            <li>Custom user-imported or exported configuration files (encrypted with AES-256).</li>
+        </ul>
+
+        <h2>5. Advertising & Third-Party Services</h2>
+        <p>To provide free access to high-speed servers, FOOR VPN uses third-party advertising partners (Google AdMob). When you interact with rewarded video ads to extend your connection time, Google Mobile Ads may collect non-personal device information according to their policies:</p>
+        <ul>
+            <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
+            <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">Google AdMob Data Disclosure</a></li>
+        </ul>
+
+        <h2>6. Security</h2>
+        <p>We prioritize the security of your connections. Encrypted configs shared via the app are protected using industry-standard AES-256 cryptography.</p>
+
+        <h2>7. Contact Us</h2>
+        <p>If you have any questions or suggestions about this Privacy Policy, feel free to contact us at:</p>
+        <p><strong>Email:</strong> <a href="mailto:support@linuxctrl.com">support@linuxctrl.com</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/LinuxCTRL" target="_blank" rel="noopener noreferrer">https://github.com/LinuxCTRL</a></p>
+    </div>
+</body>
+</html>
