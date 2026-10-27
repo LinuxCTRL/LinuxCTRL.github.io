@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - SecLab: Cyber Academy & Pentest Handbook</title>
+    <style>
+        :root {
+            --bg: #080b12;
+            --card-bg: #0f172a;
+            --text-main: #f8fafc;
+            --text-sub: #94a3b8;
+            --accent: #10b981;
+            --cyan: #06b6d4;
+            --border: #1e293b;
+            --warning: #f59e0b;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            margin: 0;
+            padding: 24px 16px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            padding: 36px;
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+        }
+        h1 {
+            color: var(--accent);
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+        h2 {
+            color: var(--cyan);
+            font-size: 1.3rem;
+            margin-top: 28px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px;
+        }
+        h3 {
+            color: var(--text-main);
+            font-size: 1.05rem;
+            margin-top: 18px;
+        }
+        p, li {
+            color: var(--text-sub);
+            font-size: 0.98rem;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .badge {
+            display: inline-block;
+            background: rgba(16, 185, 129, 0.1);
+            color: var(--accent);
+            border: 1px solid var(--accent);
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        .notice-box {
+            background-color: rgba(16, 185, 129, 0.08);
+            border: 1px solid var(--accent);
+            border-radius: 10px;
+            padding: 16px;
+            margin: 20px 0;
+        }
+        .notice-box p {
+            color: #a7f3d0;
+            margin: 0;
+            font-size: 0.95rem;
+        }
+        .date {
+            color: var(--text-sub);
+            font-size: 0.9rem;
+            margin-bottom: 16px;
+        }
+        .footer {
+            margin-top: 36px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-sub);
+        }
+        code {
+            background: rgba(0, 0, 0, 0.4);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            color: var(--cyan);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <div class="badge">Application: SecLab: Cyber Academy & Pentest Handbook (com.foor.seclab.academy)</div>
+        <div class="date">Last Updated: October 27, 2026</div>
+
+        <p>Welcome to <strong>SecLab: Cyber Academy & Pentest Handbook</strong> ("we", "our", or "us"), published by <strong>foor</strong>. We are committed to transparency and respecting your digital privacy. This Privacy Policy explains our data collection, storage, and processing practices in strict compliance with Google Play Developer Policies, GDPR, CCPA/CPRA, and international data protection laws.</p>
+
+        <div class="notice-box">
+            <p><strong>🔒 Summary of Core Privacy Commitments:</strong><br>
+            • SecLab does <strong>not</strong> collect, harvest, or store your personal identity (no names, emails, passwords, contacts, or phone numbers).<br>
+            • All academy progress, quiz XP, belt ranks, and tool preferences are stored <strong>locally on your device</strong>.<br>
+            • We do not operate tracking servers or sell user data to data brokers.<br>
+            • Third-party partner advertising (Google AdMob) is implemented with strict consent and voluntary user rewards.</p>
+        </div>
+
+        <h2>1. Information Stored Locally on Your Device</h2>
+        <p>SecLab is designed with a privacy-first, offline-capable architecture. The following data is saved exclusively inside the application's isolated sandboxed storage (using React Native <code>AsyncStorage</code>) on your local hardware:</p>
+        <ul>
+            <li><strong>Academy Progress & Belt Rank:</strong> Your earned Operator XP score, completed scenario questions, and rank tier (White, Yellow, Orange, Red, Black Belt).</li>
+            <li><strong>Daily Mission Checklists:</strong> Your interactive daily learning objectives and completion status.</li>
+            <li><strong>User Interface Preferences:</strong> Your selected cyber theme mode (Dark Hacker, OLED Midnight, Cyberpunk, Light Mode) and haptic tactile feedback toggle.</li>
+            <li><strong>Onboarding State:</strong> A boolean flag indicating whether the initial interactive tour has been completed.</li>
+        </ul>
+        <p><em>This data never leaves your device and is not transmitted to any remote servers operated by the developer. You retain complete control over this data at all times.</em></p>
+
+        <h2>2. Third-Party Advertising (Google AdMob)</h2>
+        <p>To support free development and keep advanced cybersecurity learning tools accessible to everyone, SecLab integrates the <strong>Google Mobile Ads SDK (AdMob)</strong>. AdMob may automatically collect certain pseudonymous device telemetry to serve advertisements and measure ad performance in accordance with Google Play Developer Policies.</p>
+
+        <h3>A. Information Processed by AdMob</h3>
+        <ul>
+            <li><strong>Device Identifiers:</strong> Advertising ID (such as the Google Advertising ID / AAID) as permitted by Android OS permissions and user consent settings.</li>
+            <li><strong>Coarse Location:</strong> General region/country derived from IP address (no precise GPS coordinates are ever requested or collected).</li>
+            <li><strong>Diagnostic & Performance Data:</strong> App launch telemetry, ad interaction logs, and crash traces to optimize ad delivery and prevent fraudulent impressions.</li>
+        </ul>
+
+        <h3>B. Ad Units & Voluntary Rewarded Videos</h3>
+        <p>SecLab does <strong>not</strong> display intrusive banner ads. Advertisements consist of:</p>
+        <ul>
+            <li><strong>Rewarded Video Ads:</strong> Completely voluntary, user-initiated partner videos that grant +25 in-game Operator XP upon completion. Users must explicitly confirm they wish to watch a video before it plays.</li>
+            <li><strong>Interstitial Ads:</strong> Occasional full-screen partner announcements displayed following completion of an Academy Belt scenario challenge.</li>
+        </ul>
+
+        <p>For detailed information on how Google processes advertising data and how you can opt out of personalized ads, please visit:</p>
+        <ul>
+            <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
+            <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">How Google uses information from sites or apps that use our services</a></li>
+            <li><a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer">Google Ads Settings & Opt-Out Controls</a></li>
+        </ul>
+
+        <h2>3. Device Permissions Requested</h2>
+        <p>SecLab strictly limits its requested Android permissions to the absolute minimum necessary for functionality:</p>
+        <ul>
+            <li><code>android.permission.INTERNET</code>: Required solely to load partner advertisements via Google AdMob and to open external browser references (such as YouTube tutorial channels, CTF platforms, and bug bounty programs).</li>
+            <li><code>android.permission.VIBRATE</code>: Required solely to provide tactile haptic confirmation feedback when interacting with buttons, toggles, and quiz answers. Can be disabled in app Settings at any time.</li>
+        </ul>
+        <p><strong>Permissions We Never Request:</strong> SecLab never requests access to your Camera, Microphone, Precise GPS Location, Contacts, SMS, Phone State, Calendar, or External File Management.</p>
+
+        <h2>4. Educational & Ethical Hacking Code of Conduct</h2>
+        <p>SecLab is an educational reference manual and command construction tool designed for authorized cybersecurity auditing, academic preparation for industry certifications (such as CompTIA Security+, CEH, eJPT, and OSCP), and Capture The Flag (CTF) competitions.</p>
+        <ul>
+            <li>The application does <strong>not</strong> contain executable attack scripts, automated exploit payloads, or network packet injection software that executes against third parties from the device.</li>
+            <li>Users are strictly bound by our Ethical Code of Conduct to only interact with and audit systems for which they have received prior written authorization from the owner.</li>
+        </ul>
+
+        <h2>5. Children's Privacy (COPPA Compliance)</h2>
+        <p>SecLab is directed toward students, IT professionals, and adult learners aged 16 and older. We do not knowingly target or collect personal information from children under 13 years of age. In compliance with the U.S. Children's Online Privacy Protection Act (COPPA) and international standards, our application does not solicit or store personal data from minor users.</p>
+
+        <h2>6. Your Data Rights & Deletion (GDPR & CCPA/CPRA)</h2>
+        <p>Under the European General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA):</p>
+        <ul>
+            <li><strong>No Sale of Data:</strong> We do not sell, rent, or trade your personal data.</li>
+            <li><strong>Right to Erasure / Total Reset:</strong> You can purge 100% of locally stored data at any moment directly within the app by navigating to <strong>Settings &gt; Data &amp; Reset &gt; Reset Academy Progress</strong>, or via Android Settings &gt; Apps &gt; SecLab &gt; Storage &gt; Clear Storage.</li>
+            <li><strong>Right to Withdraw Ad Consent:</strong> You can reset or delete your Google Advertising ID at any time in your device's operating system settings under <code>Settings &gt; Privacy &gt; Ads</code>.</li>
+        </ul>
+
+        <h2>7. Changes to This Privacy Policy</h2>
+        <p>We reserve the right to update this Privacy Policy to reflect technical, operational, or legal updates. Any modifications will be posted to this URL with a revised "Last Updated" date. Continued use of the application after modifications signifies acceptance of the updated terms.</p>
+
+        <h2>8. Contact Us</h2>
+        <p>If you have any questions, feedback, or legal inquiries concerning this Privacy Policy, please contact the developer team at:</p>
+        <p><strong>Email:</strong> <a href="mailto:support@linuxctrl.github.io">support@linuxctrl.github.io</a></p>
+
+        <div class="footer">
+            &copy; 2026 foor. All rights reserved. • SecLab Ethical Cyber Academy
+        </div>
+    </div>
+</body>
+</html>
