@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Omarchy Hub</title>
+    <style>
+        :root {
+            --bg: #0d1117;
+            --card-bg: #161b22;
+            --text-main: #f0f6fc;
+            --text-sub: #8b949e;
+            --accent: #e68e0d;
+            --accent-subtle: rgba(230, 142, 13, 0.15);
+            --accent-green: #9ece6a;
+            --border: #30363d;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            margin: 0;
+            padding: 24px 16px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            padding: 36px;
+            border-radius: 20px;
+            border: 1px solid var(--border);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+        }
+        h1 {
+            color: var(--accent);
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+        h2 {
+            color: var(--accent);
+            font-size: 1.3rem;
+            margin-top: 28px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px;
+        }
+        h3 {
+            color: var(--text-main);
+            font-size: 1.05rem;
+            margin-top: 18px;
+        }
+        p, li {
+            color: var(--text-sub);
+            font-size: 0.98rem;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .badge {
+            display: inline-block;
+            background: var(--accent-subtle);
+            color: var(--accent);
+            border: 1px solid var(--accent);
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        .notice-box {
+            background-color: var(--accent-subtle);
+            border: 1px solid var(--accent);
+            border-radius: 10px;
+            padding: 16px;
+            margin: 20px 0;
+        }
+        .notice-box p {
+            color: #ffedd5;
+            margin: 0;
+            font-size: 0.95rem;
+        }
+        .date {
+            color: var(--text-sub);
+            font-size: 0.9rem;
+            margin-bottom: 16px;
+        }
+        .footer {
+            margin-top: 36px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-sub);
+        }
+        code {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            color: var(--accent-green);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <div class="badge">Application: Omarchy Hub (com.foor.omarchy)</div>
+        <div class="date">Last Updated: November 2, 2026</div>
+
+        <p>Welcome to <strong>Omarchy Hub</strong> ("we", "our", or "us"), developed and published by <strong>foor</strong>. Omarchy Hub is an offline-first companion application for Android designed for users of the Omarchy Linux environment. It provides an offline plugin directory, the complete Omarchy handbook, keyboard cheatsheets, and community news.</p>
+
+        <p>We respect your privacy. Omarchy Hub is built to function with your data strictly on your device. This Privacy Policy outlines the minimal data handled by the application, how it is managed, and your rights in compliance with Google Play Developer Policies, the European Union / United Kingdom General Data Protection Regulation (GDPR), and the California Consumer Privacy Act (CCPA/CPRA).</p>
+
+        <div class="notice-box">
+            <p><strong>🔒 Summary of Core Privacy Commitments:</strong><br>
+            • <strong>No Accounts or Registration:</strong> You do not need an account to use Omarchy Hub. We never ask for or collect your name, email, phone number, address, or credentials.<br>
+            • <strong>Local-First Storage:</strong> Your preferences (theme choices, bookmarks, supporter status) are saved purely in local device storage.<br>
+            • <strong>No Tracking or Profiling:</strong> We do not operate tracking servers or sell your data.<br>
+            • <strong>Independent Open-Source Companion:</strong> Omarchy Hub is an independent community project. All official Omarchy content syncs directly from public repositories without sending personal data.<br>
+            • <strong>AdMob Transparency:</strong> We use Google AdMob (rewarded video to support development and occasional interstitials on external links) with standard consent management controls.</p>
+        </div>
+
+        <h2>1. Information Stored Locally on Your Device</h2>
+        <p>Omarchy Hub utilizes local storage (AsyncStorage and cached files) on your Android device to deliver a seamless offline experience. The data stored includes:</p>
+        <ul>
+            <li><strong>Theme & Display Settings:</strong> Your selected terminal theme (e.g. Nord, Gruvbox, Tokyo Night, Catppuccin, Monokai) and display preferences.</li>
+            <li><strong>Offline Content Cache:</strong> Bundled and synced plugin metadata, documentation manuals, and recent RSS news items so the app remains fully functional without an active internet connection.</li>
+            <li><strong>Community Supporter Status:</strong> A local counter recording community support unlocked via rewarded videos.</li>
+            <li><strong>Notification State:</strong> Local timestamps of content syncs to notify you only when genuine new plugins or articles are published.</li>
+        </ul>
+        <p><em>This data is stored exclusively in your device's isolated application sandbox and is never uploaded to any server operated by the developer.</em></p>
+
+        <h2>2. Network Communications & Content Synchronization</h2>
+        <p>Omarchy Hub connects to the internet strictly for two purposes:</p>
+        <ul>
+            <li><strong>Public Content Sync:</strong> The app periodically checks public endpoints (such as <code>https://plugins.omarchy.org</code> and <code>https://omarchy.org/news/</code>) to check for newly published official plugins or announcements. This request is an anonymous HTTP GET request that transmits standard network protocol headers (such as IP address) necessary for web requests, but transmits no personal identification or telemetry.</li>
+            <li><strong>Third-Party Advertising:</strong> Network calls made by the Google Mobile Ads SDK as described below.</li>
+        </ul>
+
+        <h2>3. Third-Party Advertising (Google AdMob)</h2>
+        <p>To support ongoing maintenance and updates, Omarchy Hub incorporates the <strong>Google Mobile Ads SDK (AdMob)</strong>, provided by Google LLC. AdMob may process certain pseudonymous technical device data in accordance with Google Play Developer Policies and applicable privacy laws.</p>
+
+        <h3>A. Information Processed by AdMob</h3>
+        <ul>
+            <li><strong>Device Identifiers:</strong> Your Google Advertising ID (AAID), subject to your Android device settings and consent choices.</li>
+            <li><strong>Coarse Location:</strong> Approximate country or regional location inferred from your IP address to serve localized ad inventory. Precise GPS location is never requested or accessed.</li>
+            <li><strong>Ad Diagnostics & Fraud Prevention:</strong> Interaction metrics (impressions, clicks) and SDK diagnostic telemetry used to detect invalid traffic and prevent click fraud.</li>
+        </ul>
+
+        <h3>B. Ad Formats in Omarchy Hub</h3>
+        <ul>
+            <li><strong>Rewarded Video Ads:</strong> 100% voluntary. You may optionally choose to watch a rewarded video in the "About" tab to support the project and unlock the Community Supporter badge.</li>
+            <li><strong>Interstitial Ads:</strong> Occasional full-screen ads shown upon opening external resource links (e.g., viewing an upstream GitHub repository). Interstitials are frequency-capped with cooldown periods and are never displayed during primary content browsing.</li>
+        </ul>
+        <p>Omarchy Hub does not display persistent banner ads or disruptive app-open ads.</p>
+
+        <p>Learn more about how Google handles advertising data:</p>
+        <ul>
+            <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
+            <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Google Advertising Technologies</a></li>
+            <li><a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer">Google Ads Settings &amp; Personalization Controls</a></li>
+        </ul>
+
+        <h2>4. User Consent & Advertising Choices</h2>
+        <p>Where required by privacy regulations — such as in the European Economic Area (EEA), the United Kingdom, and Switzerland — Omarchy Hub integrates Google's <strong>User Messaging Platform (UMP)</strong> to obtain your consent prior to loading personalized advertising.</p>
+        <ul>
+            <li>You can reset or clear your Advertising ID at any time in Android settings under <code>Settings &gt; Privacy &gt; Ads</code>.</li>
+            <li>You can opt out of personalized ads or adjust ad preferences through Google's Ad Settings.</li>
+        </ul>
+
+        <h2>5. Device Permissions Requested</h2>
+        <p>Omarchy Hub requests minimal system permissions:</p>
+        <ul>
+            <li><code>android.permission.INTERNET</code>: Required to check for public plugin updates, news feeds, and load Google AdMob advertisements.</li>
+            <li><code>android.permission.POST_NOTIFICATIONS</code>: (Android 13+) Used optionally to deliver local notifications when new plugins or news articles are published. You can disable this permission at any time in Android system settings.</li>
+            <li><code>android.permission.VIBRATE</code>: Used to provide subtle haptic feedback when copying terminal commands or interacting with the interface.</li>
+        </ul>
+        <p><strong>Permissions We Never Request:</strong> Omarchy Hub does not request or access camera, microphone, contacts, location/GPS, storage/files, call logs, SMS, or biometric data.</p>
+
+        <h2>6. Notifications & Background Tasks</h2>
+        <p>Omarchy Hub utilizes local notifications (via <code>expo-notifications</code>) to inform you of updates. These notifications are scheduled and processed locally on your phone. No push tokens or identifiers are transmitted to third-party push notification services or remote notification servers.</p>
+
+        <h2>7. Data Retention, Security & Deletion</h2>
+        <p>Because all user data is stored locally on your device:</p>
+        <ul>
+            <li>You have full control over your data. You can erase all cached information and stored settings at any time by going to <code>Settings &gt; Apps &gt; Omarchy Hub &gt; Storage &gt; Clear Data</code> or by uninstalling the application.</li>
+            <li>We do not host or operate remote databases containing personal user records.</li>
+            <li>All network communications (content synchronization and ad delivery) use encrypted HTTPS (TLS) connections.</li>
+        </ul>
+
+        <h2>8. Children's Privacy (COPPA)</h2>
+        <p>Omarchy Hub is a utility tool for developers, system administrators, and Linux enthusiasts. It is not directed at children under the age of 13, and we do not knowingly collect personal information from children.</p>
+
+        <h2>9. Disclaimer & Third-Party Resources</h2>
+        <p>Omarchy Hub is an independent open-source project. It is not affiliated with, endorsed by, or sponsored by 37signals, DHH, or the Omarchy Linux project. Outgoing links to external websites (such as GitHub or <code>omarchy.org</code>) are governed by the privacy policies of those respective services.</p>
+
+        <h2>10. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. When changes occur, the updated policy will be published on this page with a revised "Last Updated" date. The current policy is also directly readable within the app's About section.</p>
+
+        <h2>11. Contact Us</h2>
+        <p>If you have any questions, feedback, or inquiries regarding this Privacy Policy, please contact:</p>
+        <p><strong>Developer:</strong> foor<br>
+        <strong>Email:</strong> <a href="mailto:support@linuxctrl.github.io">support@linuxctrl.github.io</a><br>
+        <strong>GitHub:</strong> <a href="https://github.com/LinuxCTRL" target="_blank" rel="noopener noreferrer">https://github.com/LinuxCTRL</a></p>
+
+        <div class="footer">
+            &copy; 2026 foor. All rights reserved. • Omarchy Hub
+        </div>
+    </div>
+</body>
+</html>
